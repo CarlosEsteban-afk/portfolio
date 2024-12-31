@@ -52,13 +52,11 @@ const projects = [
 </template>
 
 <style scoped>
-/* General Container */
 .projects {
   background-color: var(--secondary-color);
   color: white;
 }
 
-/* Project Container */
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -67,14 +65,14 @@ const projects = [
 }
 .project-card {
   display: flex;
-  flex-direction: row; /* Changed to row */
+  flex-direction: row;
   background: #161b22;
   border-radius: 10px;
   overflow: hidden;
   transition:
     transform 0.3s ease-in-out,
     box-shadow 0.3s ease-in-out;
-  min-height: 300px; /* Reduced min-height */
+  min-height: 300px;
 }
 
 .project-card:hover {
@@ -88,14 +86,14 @@ const projects = [
   }
 
   .project-card {
-    flex-direction: column; /* Stack the image below the text on smaller screens */
-    align-items: center; /* Center the content */
-    padding: 1rem; /* Adjust padding */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
 
   .project-text {
-    width: 100%; /* Allow text to take full width on smaller screens */
-    padding: 1rem; /* Adjust padding */
+    width: 100%;
+    padding: 1rem;
   }
 }
 </style>

@@ -8,7 +8,6 @@ const props = defineProps<{
 }>()
 </script>
 <template>
-  <!-- Left Section -->
   <div class="project-text">
     <h3>{{ props.title }}</h3>
     <p>{{ props.description }}</p>
@@ -16,8 +15,6 @@ const props = defineProps<{
       <span v-for="tag in props.tags" :key="tag" class="tag">{{ tag }}</span>
     </div>
   </div>
-
-  <!-- Right Section -->
   <div class="project-image">
     <img :src="props.image" :alt="props.title" />
   </div>
@@ -29,7 +26,7 @@ const props = defineProps<{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 50%; /* Take up half of the card width */
+  width: 50%;
 }
 
 .project-text h3 {
@@ -60,27 +57,26 @@ const props = defineProps<{
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  width: 50%; /* Take up the other half of the card */
+  width: 50%;
 }
 
 .project-image img {
-  width: 100%; /* Make the image fill the container */
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
   .project-image {
-    width: 100%; /* Allow image to take full width */
-    padding: 1rem; /* Adjust padding */
+    width: 100%;
+    padding: 1rem;
   }
   .project-text {
-    width: 100%; /* Allow text to take full width on smaller screens */
-    padding: 1rem; /* Adjust padding */
+    width: 100%;
+    padding: 1rem;
   }
   .project-image img {
-    max-height: 300px; /* Optional: limit the height of the image on small screens */
-    object-fit: cover; /* Ensure the image covers the available space */
+    max-height: 300px;
+    object-fit: cover;
   }
 }
 </style>
