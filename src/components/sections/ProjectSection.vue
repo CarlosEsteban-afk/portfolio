@@ -6,7 +6,7 @@ const projects = [
     description:
       'Dashboard para la plataforma ReplicaCity Temuco, permite visualizar datos de movilidad urbana en tiempo real.',
     tags: ['Vue3.JS', 'JavaScript', 'MapBox', 'Tailwind'],
-    image: '/city-dashboard.png',
+    image: 'city-dashboard.png',
     link: 'https://example.com',
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     description:
       'POC Aplicación movil que muestra una lista de Pokémon utilizando la API de PokeAPI.',
     tags: ['Figma', 'React-native', 'JavaScript', 'PhaserJS'],
-    image: './bunny-hunt.png',
+    image: 'bunny-hunt.png',
     link: 'https://example2.com',
   },
   {
