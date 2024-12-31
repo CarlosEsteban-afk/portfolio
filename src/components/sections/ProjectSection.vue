@@ -6,14 +6,14 @@ const projects = [
     description:
       'Dashboard para la plataforma ReplicaCity Temuco, permite visualizar datos de movilidad urbana en tiempo real.',
     tags: ['Vue3.JS', 'JavaScript', 'MapBox', 'Tailwind'],
-    image: '/src/assets/city-dashboard.png',
+    image: './src/assets/city-dashboard.png',
     link: 'https://example.com',
   },
   {
     title: 'Bunny Hunt',
     description: 'Una prueba de concepto de video juego creado utilizando PhaserJS.',
     tags: ['Figma', 'JavaScript', 'SpringBoot', 'Vue3.JS', 'PhaserJS'],
-    image: '/src/assets/bunny-hunt.png',
+    image: './src/assets/bunny-hunt.png',
     link: 'https://example2.com',
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     description:
       'POC Aplicación movil que muestra una lista de Pokémon utilizando la API de PokeAPI.',
     tags: ['Figma', 'React-native', 'JavaScript', 'PhaserJS'],
-    image: '/src/assets/bunny-hunt.png',
+    image: './src/assets/bunny-hunt.png',
     link: 'https://example2.com',
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     description:
       'Laboratorio de análisis de malware, diseñado para identificar y mitigar amenazas cibernéticas.',
     tags: ['Python', 'Cuckoo Sandbox', 'YARA', 'Wireshark'],
-    image: '/src/assets/bunny-hunt.png',
+    image: './src/assets/bunny-hunt.png',
     link: 'https://example2.com',
   },
 ]

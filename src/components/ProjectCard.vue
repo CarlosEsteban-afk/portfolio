@@ -76,7 +76,10 @@ const props = defineProps<{
     width: 100%; /* Allow image to take full width */
     padding: 1rem; /* Adjust padding */
   }
-
+  .project-text {
+    width: 100%; /* Allow text to take full width on smaller screens */
+    padding: 1rem; /* Adjust padding */
+  }
   .project-image img {
     max-height: 300px; /* Optional: limit the height of the image on small screens */
     object-fit: cover; /* Ensure the image covers the available space */
