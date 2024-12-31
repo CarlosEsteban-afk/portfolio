@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="/public/carl.jpeg" alt="Developer portrait" class="profile-picture" />
+      <img src="/carl.jpeg" alt="Developer portrait" class="profile-picture" />
     </div>
   </section>
 </template>
