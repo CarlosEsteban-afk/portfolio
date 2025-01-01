@@ -2,6 +2,22 @@
 import ProjectCard from '../ProjectCard.vue'
 const projects = [
   {
+    title: 'Pokedex',
+    description:
+      'POC Aplicación movil que muestra una lista de Pokémon utilizando la API de PokeAPI.',
+    tags: ['Figma', 'React-native', 'JavaScript', 'PhaserJS'],
+    image: 'pokeapp.png',
+    link: 'https://example2.com',
+  },
+  {
+    title: 'Malware analysis lab',
+    description:
+      'Laboratorio de análisis de malware, diseñado para identificar y mitigar amenazas cibernéticas.',
+    tags: ['Python', 'Cuckoo Sandbox', 'YARA', 'Wireshark'],
+    image: 'malware.png',
+    link: 'https://example2.com',
+  },
+  {
     title: 'City Scope Dashboard',
     description:
       'Dashboard para la plataforma ReplicaCity Temuco, permite visualizar datos de movilidad urbana en tiempo real.',
@@ -16,27 +32,11 @@ const projects = [
     image: 'bunny-hunt.png',
     link: 'https://example2.com',
   },
-  {
-    title: 'Pokedex',
-    description:
-      'POC Aplicación movil que muestra una lista de Pokémon utilizando la API de PokeAPI.',
-    tags: ['Figma', 'React-native', 'JavaScript', 'PhaserJS'],
-    image: 'bunny-hunt.png',
-    link: 'https://example2.com',
-  },
-  {
-    title: 'Malware analysis lab',
-    description:
-      'Laboratorio de análisis de malware, diseñado para identificar y mitigar amenazas cibernéticas.',
-    tags: ['Python', 'Cuckoo Sandbox', 'YARA', 'Wireshark'],
-    image: 'bunny-hunt.png',
-    link: 'https://example2.com',
-  },
 ]
 </script>
 <template>
   <section class="projects">
-    <h2 class="mb-5">Proyectos</h2>
+    <h1 class="mb-5">Proyectos</h1>
     <div class="project-container">
       <div v-for="project in projects" :key="project.title" class="project-card">
         <ProjectCard
@@ -52,11 +52,6 @@ const projects = [
 </template>
 
 <style scoped>
-.projects {
-  background-color: var(--secondary-color);
-  color: white;
-}
-
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,7 +61,7 @@ const projects = [
 .project-card {
   display: flex;
   flex-direction: row;
-  background: #161b22;
+  background: var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
   transition:

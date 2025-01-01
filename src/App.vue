@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+import Header from '@/components/HeaderComponent.vue'
 </script>
 
 <template>
   <div class="mx-4 my-3">
+    <Header />
     <RouterView />
   </div>
 </template>
@@ -15,7 +17,7 @@ html {
 :root {
   --background-color: #161b22;
   --primary-color: #001f54;
-  --secondary-color: #034078;
+  --secondary-color: #252835;
   --text-color: #a9d6e5;
   --accent-color: #f4d06f;
 }
@@ -28,16 +30,6 @@ body {
 
 a {
   color: var(--accent-color);
-}
-
-.about,
-.skills,
-.projects,
-.contact {
-  background-color: var(--secondary-color);
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border-radius: 8px;
 }
 
 .primary-btn,

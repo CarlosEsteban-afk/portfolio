@@ -19,13 +19,21 @@
 </template>
 
 <style scoped>
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.about-content {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
 .hero-section {
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-color);
   color: white;
   font-family: 'Arial', sans-serif;
   padding: 2rem;
@@ -94,9 +102,6 @@
 
   .hero-image {
     max-width: 50%;
-  }
-  .hero-buttons {
-    justify-content: left;
   }
 
   .profile-picture {

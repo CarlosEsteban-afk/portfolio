@@ -11,8 +11,8 @@ import FooterSection from '@/components/sections/FooterSection.vue'
   <main class="portfolio">
     <HeroSection />
     <AboutSection />
-    <ProjectSection />
     <SkillSection />
+    <ProjectSection />
     <ContactSection />
     <FooterSection />
   </main>
@@ -26,24 +26,26 @@ import FooterSection from '@/components/sections/FooterSection.vue'
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-
-.hero {
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
   text-align: center;
-  margin: 2rem 0;
-}
-
-.about,
-.skills,
-.projects,
-.contact {
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 8px;
 }
 
 .skills ul,
 .contact ul {
   list-style: none;
   padding: 0;
+}
+@media (min-width: 768px) {
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+  }
 }
 </style>

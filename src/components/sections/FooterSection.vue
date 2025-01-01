@@ -2,7 +2,7 @@
 
 <template>
   <footer class="footer">
-    <p>&copy; 2024 Carlos Peña</p>
+    <p>2024 | Carlos Peña</p>
   </footer>
 </template>
 <style scoped>
