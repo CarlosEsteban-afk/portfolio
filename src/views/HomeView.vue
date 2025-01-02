@@ -26,12 +26,6 @@ import FooterSection from '@/components/sections/FooterSection.vue'
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  text-align: center;
-}
 
 .skills ul,
 .contact ul {

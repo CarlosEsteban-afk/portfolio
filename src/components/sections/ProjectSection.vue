@@ -35,7 +35,7 @@ const projects = [
 ]
 </script>
 <template>
-  <section class="projects">
+  <section class="projects slide-in-left" id="projects">
     <h1 class="mb-5">Proyectos</h1>
     <div class="project-container">
       <div v-for="project in projects" :key="project.title" class="project-card">
@@ -52,6 +52,9 @@ const projects = [
 </template>
 
 <style scoped>
+.projects {
+  margin-bottom: 10vh;
+}
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -61,7 +64,7 @@ const projects = [
 .project-card {
   display: flex;
   flex-direction: row;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   border-radius: 10px;
   overflow: hidden;
   transition:
@@ -72,7 +75,7 @@ const projects = [
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 10px 15px var(--accent-color);
 }
 
 @media (max-width: 768px) {

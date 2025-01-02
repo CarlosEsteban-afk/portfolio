@@ -4,10 +4,8 @@ import Header from '@/components/HeaderComponent.vue'
 </script>
 
 <template>
-  <div class="mx-4 my-3">
-    <Header />
-    <RouterView />
-  </div>
+  <Header />
+  <RouterView />
 </template>
 
 <style>
@@ -15,21 +13,29 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --background-color: #161b22;
-  --primary-color: #001f54;
-  --secondary-color: #252835;
-  --text-color: #a9d6e5;
-  --accent-color: #f4d06f;
+  --background-color: #000000;
+  --primary-color: #1c1c1c;
+  --secondary-color: #b22222;
+  --text-color: #faebd7;
+  --accent-color: #ecab60;
+  --light-color: #ff0000;
 }
-
+section {
+  margin: 3rem 0;
+}
 body {
-  background-color: var(--background-color);
+  background: linear-gradient(180deg, var(--primary-color) 0%, var(--background-color) 100%);
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
 }
-
-a {
-  color: var(--accent-color);
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .primary-btn,
@@ -50,13 +56,13 @@ a {
 }
 
 .primary-btn:hover {
-  background-color: #e5b800;
+  background-color: var(--accent-color);
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px var(--accent-color);
 }
 
 .secondary-btn {
-  background-color: #444;
+  background-color: #333444;
   color: white;
   border: none;
 }
@@ -64,12 +70,41 @@ a {
 .secondary-btn:hover {
   background-color: #555;
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px var(--accent-color);
 }
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);

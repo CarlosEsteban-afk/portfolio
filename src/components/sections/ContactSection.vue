@@ -1,27 +1,14 @@
 <script setup lang="ts"></script>
 <template>
-  <section class="contact">
+  <section class="contact slide-in-right">
     <div class="contact-container">
       <div class="contact-card">
-        <h2>Contactame</h2>
+        <h1>Contactame</h1>
         <p class="contact-description">
-          I'm open to collaborations, opportunities, or just a friendly chat. Feel free to connect
-          with me on any of the platforms below!
+          Si deseas contactarme para colaboraciones, oportunidades laborales o simplemente para
+          charlar, no dudes en enviarme un mensaje. <br />Puedes encontrarme en las siguientes
+          plataformas:
         </p>
-        <div class="contact-links">
-          <a href="mailto:your-email@example.com" class="contact-link">
-            <img src="/public/icons/email.svg" alt="Email Icon" class="contact-icon" />
-            <span>Email</span>
-          </a>
-          <a href="https://linkedin.com/in/your-profile" class="contact-link">
-            <img src="/public/icons/linkedin.svg" alt="LinkedIn Icon" class="contact-icon" />
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/your-profile" class="contact-link">
-            <img src="/public/icons/git.svg" alt="GitHub Icon" class="contact-icon" />
-            <span>GitHub</span>
-          </a>
-        </div>
       </div>
     </div>
   </section>
@@ -36,19 +23,9 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center all elements horizontally */
+  align-items: center;
   justify-content: center;
-  padding: 2rem; /* Add padding for spacing */
-  background: #252835; /* Ensure proper card background */
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add shadow for visual interest */
-}
-
-/* Title and Description */
-.contact-card h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
+  padding: 2rem;
 }
 
 .contact-description {
@@ -57,44 +34,27 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Contact Links Container */
-.contact-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Center the links horizontally */
-  align-items: center; /* Vertically align icons and text */
-  gap: 1rem; /* Space between the links */
-  width: 100%; /* Make the container take up full width */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+  .contact-card h2 {
+    font-size: 1.8rem;
+  }
+  .contact-description {
+    font-size: 0.9rem;
+  }
 }
 
-/* Individual Contact Link */
-.contact-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #333444; /* Darker button-like background */
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  font-size: 1rem;
-  font-weight: bold;
-  gap: 0.8rem;
-}
-
-.contact-link:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  background: #444556;
-}
-
-/* Contact Icon */
-.contact-icon {
-  width: 24px;
-  height: 24px;
-  filter: invert(1); /* White icon */
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1rem;
+  }
+  .contact-card h2 {
+    font-size: 1.5rem;
+  }
+  .contact-description {
+    font-size: 0.8rem;
+  }
 }
 </style>

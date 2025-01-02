@@ -1,12 +1,18 @@
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   name: String,
   path: String,
+  color: String,
 })
 </script>
 
 <template>
-  <div class="skill-card">
+  <div
+    class="skill-card"
+    :style="{
+      '--hover-shadow-color': props.color || 'var(--accent-color)',
+    }"
+  >
     <img :src="path" :alt="name" class="skill-icon" />
     <p class="skill-name">{{ name }}</p>
   </div>
@@ -18,7 +24,7 @@ defineProps({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
@@ -30,13 +36,13 @@ defineProps({
 
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 10px var(--hover-shadow-color);
 }
 
 .skill-icon {
   width: 50px;
   height: 50px;
-  margin-bottom: 0.5rem;
+  margin-top: 0.6rem;
   filter: invert(1);
 }
 

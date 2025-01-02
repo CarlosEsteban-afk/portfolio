@@ -1,35 +1,45 @@
 <script setup lang="ts"></script>
 <template>
-  <section class="hero-section slide-in-left">
-    <div class="hero-content slide-in-left">
-      <h1>
-        <span class="highlight">Carlos Peña</span> <br />
-        Desarrollador Full Stack y Estudiante de Ingeniería Informática
-      </h1>
-      <p>Con un profundo interes por el desarrollo de videojuegos y la ciberseguridad.</p>
-      <div class="hero-buttons">
-        <button class="primary-btn">Mis proyectos</button>
-        <button class="secondary-btn">Ver mi CV</button>
+  <section class="hero slide-in-left">
+    <div class="hero-section">
+      <div class="hero-content slide-in-left">
+        <h1 class="gradient-text">
+          <span class="highlight">Carlos Peña</span> <br />
+          Desarrollador Full Stack y Estudiante de Ingeniería Informática
+          <p>Con un profundo interes por el desarrollo de videojuegos y la ciberseguridad.</p>
+        </h1>
+        <div class="hero-buttons">
+          <button class="primary-btn"><a href="#projects">Mis proyectos</a></button>
+          <button class="secondary-btn">Ver mi CV</button>
+        </div>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="/carl.jpeg" alt="Developer portrait" class="profile-picture" />
+      <div class="hero-image">
+        <img src="/carl.jpeg" alt="Developer portrait" class="profile-picture" />
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.gradient-text {
+  background: linear-gradient(90deg, #ff6f61, #ffcc00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-.about-content {
-  font-size: 1.5rem;
-  line-height: 1.5;
+button a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  font-weight: bold;
+}
+.hero {
+  color: white;
   text-align: center;
 }
+
 .hero-section {
+  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +50,9 @@
   text-align: center;
   gap: 2rem;
 }
-
+h1 {
+  text-align: center;
+}
 .hero-content {
   max-width: 90%;
 }
@@ -87,7 +99,15 @@
     padding: 4rem;
     gap: 4rem;
   }
+  h1 {
+    text-align: left;
+  }
 
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+  }
   .hero-content {
     max-width: 45%;
   }

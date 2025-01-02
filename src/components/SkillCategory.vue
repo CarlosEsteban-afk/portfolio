@@ -4,7 +4,7 @@ import { computed } from 'vue'
 
 const props = defineProps<{
   title?: string
-  skills?: Array<{ name: string; path: string }>
+  skills?: Array<{ name: string; path: string; color?: string }>
 }>()
 
 const skills = computed(() => props.skills ?? [])
@@ -12,9 +12,15 @@ const skills = computed(() => props.skills ?? [])
 
 <template>
   <div class="skills-category">
-    <h3>{{ title }}</h3>
+    <h3 class="skill-title">{{ title }}</h3>
     <div class="skills-grid">
-      <SkillCard v-for="skill in skills" :key="skill.name" :name="skill.name" :path="skill.path" />
+      <SkillCard
+        v-for="skill in skills"
+        :key="skill.name"
+        :name="skill.name"
+        :path="skill.path"
+        :color="skill.color"
+      />
     </div>
   </div>
 </template>
@@ -25,9 +31,12 @@ const skills = computed(() => props.skills ?? [])
 }
 
 .skills-category h3 {
+  text-align: center;
+  background: linear-gradient(45deg, #811a00, #d35b00);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 0.5rem;
 }

@@ -15,9 +15,7 @@ const props = defineProps<{
       <span v-for="tag in props.tags" :key="tag" class="tag">{{ tag }}</span>
     </div>
   </div>
-  <div class="project-image">
-    <img :src="props.image" :alt="props.title" />
-  </div>
+  <img class="project-image" :src="props.image" :alt="props.title" />
 </template>
 
 <style scoped>
@@ -53,18 +51,11 @@ const props = defineProps<{
   font-size: 0.9rem;
 }
 .project-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
   width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.project-image img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
 @media (max-width: 768px) {
   .project-image {
     width: 100%;
