@@ -1,0 +1,54 @@
+{
+  "language": "EN",
+  "hero": {
+    "title": "Full Stack Developer and Computer Engineering Student",
+    "subtitle": "With a deep interest in video game development and cybersecurity.",
+    "primary-button": "My projects",
+    "secondary-button": "My CV"
+  },
+  "about": {
+    "title": "About me",
+    "content": "I am Computer Engineering student at the University of La Frontera, with a strong passion for learning and solving problems through technology. I currently excel as a Full Stack Developer. While I don't yet have hands-on experience in video game development or cybersecurity, I am independently exploring these fields through courses, personal projects, and reading technical documentation.",
+    "high-ligt-content": "I am a curious and committed learner. I enjoy working in teams, sharing ideas, and tackling technical challenges that help me grow as a professional."
+  },
+  "skills": {
+    "title": "My Skills",
+    "programmingLanguages": "Programming Languages",
+    "frameworks": "Frameworks and Libraries",
+    "tools": "Technologies and Tools",
+    "databases": "Databases"
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Here are some of the projects I have worked on.",
+    "pokedex": {
+      "title": "Pokedex",
+      "description": "A POC mobile application that displays a list of Pokémon using the PokeAPI."
+    },
+    "malwareLab": {
+      "title": "Malware Analysis Lab",
+      "description": "A malware analysis lab designed to identify and mitigate cyber threats."
+    },
+    "cityDashboard": {
+      "title": "City Scope Dashboard",
+      "description": "Dashboard for the ReplicaCity Temuco platform, visualizing real-time urban mobility data."
+    },
+    "bunnyHunt": {
+      "title": "Bunny Hunt",
+      "description": "A proof-of-concept video game created using PhaserJS."
+    }
+  },
+  "contact": {
+    "title": "Contact me",
+    "content": "Feel free to reach out for collaborations, job opportunities, or just a friendly chat.",
+    "plataforms": "You can find me on the following platforms:"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language"
+  }
+}

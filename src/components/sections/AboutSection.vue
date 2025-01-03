@@ -1,32 +1,42 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import ContactIcon from '../ContactIcon.vue'
-
-const icon = {
-  icon: './icons/git.svg',
-  name: 'Visita mi GitHub',
-  link: 'https://github.com/CarlosEsteban-afk',
+interface Icon {
+  icon: string
+  name: string
+  link: string
 }
+const icons: Record<string, Icon> = {
+  en: {
+    icon: './icons/git.svg',
+    name: 'Visit my GitHub',
+    link: 'https://github.com/CarlosEsteban-afk',
+  },
+  es: {
+    icon: './icons/git.svg',
+    name: 'Visita mi GitHub',
+    link: 'https://github.com/CarlosEsteban-afk',
+  },
+}
+const { locale } = useI18n()
+const currentIcon = computed(() => icons[locale.value])
 </script>
 <template>
-  <section class="about">
+  <section id="about" class="about">
     <div class="about-container">
       <div class="about-image">
         <img src="/carl2.png" alt="Your Photo" class="profile-photo" />
       </div>
       <div class="about-content">
-        <h1>Acerca de mi</h1>
+        <h1>{{ $t('about.title') }}</h1>
         <p>
-          Estudiante de Ingeniería Informática en la Universidad de La Frontera, con una gran pasión
-          por aprender y resolver problemas a través de la tecnología. Actualmente me destaco como
-          desarrollador Full Stack y, aunque no poseo experiencia práctica en desarrollo de
-          videojuegos o ciberseguridad, me dedico de forma independiente a aprender sobre estas
-          áreas a través de cursos, proyectos personales y la lectura de documentación técnica.
+          {{ $t('about.content') }}
         </p>
         <p class="about-highlight">
-          Soy una persona curiosa y comprometida con el aprendizaje. Disfruto trabajar en equipo,
-          compartir ideas y enfrentar desafíos técnicos que me permitan crecer como profesional.
+          {{ $t('about.high-ligt-content') }}
         </p>
-        <ContactIcon :icon="icon.icon" :name="icon.name" :link="icon.link" />
+        <ContactIcon :icon="currentIcon.icon" :name="currentIcon.name" :link="currentIcon.link" />
       </div>
     </div>
   </section>
@@ -34,8 +44,8 @@ const icon = {
 
 <style scoped>
 .about {
-  margin-bottom: 15vh;
-  margin-top: 10vh;
+  margin-bottom: 20vh;
+  margin-top: 20vh;
   text-align: center;
 }
 .about-container {

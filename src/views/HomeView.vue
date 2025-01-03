@@ -4,11 +4,13 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 import SkillSection from '@/components/sections/SkillSection.vue'
 import ProjectSection from '@/components/sections/ProjectSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
+import Header from '@/components/HeaderComponent.vue'
 import FooterSection from '@/components/sections/FooterSection.vue'
 </script>
 
 <template>
   <main class="portfolio">
+    <Header />
     <HeroSection />
     <AboutSection />
     <SkillSection />
@@ -27,11 +29,6 @@ import FooterSection from '@/components/sections/FooterSection.vue'
   line-height: 1.6;
 }
 
-.skills ul,
-.contact ul {
-  list-style: none;
-  padding: 0;
-}
 @media (min-width: 768px) {
   .about,
   .skills,

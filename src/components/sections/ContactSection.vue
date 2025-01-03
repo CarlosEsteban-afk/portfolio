@@ -1,13 +1,12 @@
 <script setup lang="ts"></script>
 <template>
-  <section class="contact slide-in-right">
+  <section class="contact slide-in-right" id="contact">
     <div class="contact-container">
       <div class="contact-card">
-        <h1>Contactame</h1>
+        <h1>{{ $t('contact.title') }}</h1>
         <p class="contact-description">
-          Si deseas contactarme para colaboraciones, oportunidades laborales o simplemente para
-          charlar, no dudes en enviarme un mensaje. <br />Puedes encontrarme en las siguientes
-          plataformas:
+          {{ $t('contact.content') }} <br />
+          {{ $t('contact.plataforms') }}
         </p>
       </div>
     </div>

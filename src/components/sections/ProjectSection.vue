@@ -1,44 +1,54 @@
 <script setup lang="ts">
 import ProjectCard from '../ProjectCard.vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+// Define projects
 const projects = [
   {
-    title: 'Pokedex',
-    description:
-      'POC Aplicación movil que muestra una lista de Pokémon utilizando la API de PokeAPI.',
+    key: 'pokedex',
     tags: ['Figma', 'React-native', 'JavaScript', 'PhaserJS'],
     image: 'pokeapp.png',
     link: 'https://example2.com',
   },
   {
-    title: 'Malware analysis lab',
-    description:
-      'Laboratorio de análisis de malware, diseñado para identificar y mitigar amenazas cibernéticas.',
+    key: 'malwareLab',
     tags: ['Python', 'Cuckoo Sandbox', 'YARA', 'Wireshark'],
     image: 'malware.png',
     link: 'https://example2.com',
   },
   {
-    title: 'City Scope Dashboard',
-    description:
-      'Dashboard para la plataforma ReplicaCity Temuco, permite visualizar datos de movilidad urbana en tiempo real.',
+    key: 'cityDashboard',
     tags: ['Vue3.JS', 'JavaScript', 'MapBox', 'Tailwind'],
     image: 'city-dashboard.png',
     link: 'https://example.com',
   },
   {
-    title: 'Bunny Hunt',
-    description: 'Una prueba de concepto de video juego creado utilizando PhaserJS.',
+    key: 'bunnyHunt',
     tags: ['Figma', 'JavaScript', 'SpringBoot', 'Vue3.JS', 'PhaserJS'],
     image: 'bunny-hunt.png',
     link: 'https://example2.com',
   },
 ]
+
+const localizedProjects = computed(() =>
+  projects.map((project) => ({
+    title: t(`projects.${project.key}.title`),
+    description: t(`projects.${project.key}.description`),
+    tags: project.tags,
+    image: project.image,
+    link: project.link,
+  })),
+)
 </script>
+
 <template>
   <section class="projects slide-in-left" id="projects">
-    <h1 class="mb-5">Proyectos</h1>
+    <h1 class="mb-5">{{ t('projects.title') }}</h1>
     <div class="project-container">
-      <div v-for="project in projects" :key="project.title" class="project-card">
+      <div v-for="(project, index) in localizedProjects" :key="index" class="project-card">
         <ProjectCard
           :title="project.title"
           :description="project.description"

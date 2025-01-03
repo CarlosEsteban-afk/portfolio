@@ -1,16 +1,18 @@
 <script setup lang="ts"></script>
 <template>
-  <section class="hero slide-in-left">
+  <section id="home" class="hero slide-in-left">
     <div class="hero-section">
       <div class="hero-content slide-in-left">
         <h1 class="gradient-text">
           <span class="highlight">Carlos Peña</span> <br />
-          Desarrollador Full Stack y Estudiante de Ingeniería Informática
-          <p>Con un profundo interes por el desarrollo de videojuegos y la ciberseguridad.</p>
+          {{ $t('hero.title') }}
+          <p>{{ $t('hero.subtitle') }}</p>
         </h1>
         <div class="hero-buttons">
-          <button class="primary-btn"><a href="#projects">Mis proyectos</a></button>
-          <button class="secondary-btn">Ver mi CV</button>
+          <button class="primary-btn">
+            <a href="#projects">{{ $t('hero.primary-button') }}</a>
+          </button>
+          <button class="secondary-btn">{{ $t('hero.secondary-button') }}</button>
         </div>
       </div>
       <div class="hero-image">

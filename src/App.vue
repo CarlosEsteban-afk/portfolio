@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import Header from '@/components/HeaderComponent.vue'
 </script>
 
 <template>
-  <Header />
   <RouterView />
 </template>
 
 <style>
 html {
+  scroll-padding-top: 60px;
   scroll-behavior: smooth;
 }
 :root {
@@ -21,7 +20,7 @@ html {
   --light-color: #ff0000;
 }
 section {
-  margin: 3rem 0;
+  margin: 5rem 0;
 }
 body {
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--background-color) 100%);
@@ -72,6 +71,10 @@ h1 {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px var(--accent-color);
 }
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -80,6 +83,31 @@ h1 {
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slide-in-right {
   0% {
     -webkit-transform: translateX(1000px);

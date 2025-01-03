@@ -1,0 +1,54 @@
+{
+  "language": "ES",
+  "hero": {
+    "title": "Desarrollador Full Stack y Estudiante de Ingeniería Informática",
+    "subtitle": "Con un profundo interes por el desarrollo de videojuegos y la ciberseguridad.",
+    "primary-button": "Mis proyectos",
+    "secondary-button": "Mi CV"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "content": "Estudiante de Ingeniería Informática en la Universidad de La Frontera, con una gran pasión por aprender y resolver problemas a través de la tecnología. Actualmente me destaco como desarrollador Full Stack y, aunque no poseo experiencia práctica en desarrollo de videojuegos o ciberseguridad, me dedico de forma independiente a aprender sobre estas áreas a través de cursos, proyectos personales y la lectura de documentación técnica.",
+    "high-ligt-content": "Soy una persona curiosa y comprometida con el aprendizaje. Disfruto trabajar en equipo, compartir ideas y enfrentar desafíos técnicos que me permitan crecer como profesional."
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "programmingLanguages": "Lenguajes de Programación",
+    "frameworks": "Frameworks y Librerías",
+    "tools": "Tecnologías y Herramientas",
+    "databases": "Bases de Datos"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "description": "Aquí puedes ver algunos de los proyectos en los que he trabajado.",
+    "pokedex": {
+      "title": "Pokedex",
+      "description": "POC Aplicación móvil que muestra una lista de Pokémon utilizando la API de PokeAPI."
+    },
+    "malwareLab": {
+      "title": "Laboratorio de análisis de malware",
+      "description": "Laboratorio de análisis de malware, diseñado para identificar y mitigar amenazas cibernéticas."
+    },
+    "cityDashboard": {
+      "title": "City Scope Dashboard",
+      "description": "Dashboard para la plataforma ReplicaCity Temuco, permite visualizar datos de movilidad urbana en tiempo real."
+    },
+    "bunnyHunt": {
+      "title": "Bunny Hunt",
+      "description": "Una prueba de concepto de videojuego creado utilizando PhaserJS."
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "content": "Si deseas contactarme para colaboraciones, oportunidades laborales o simplemente para charlar, no dudes en enviarme un mensaje.",
+    "plataforms": "Puedes encontrarme en las siguientes plataformas:"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": "Lenguaje"
+  }
+}
