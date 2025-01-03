@@ -63,7 +63,7 @@ const isToggled = ref(false)
 </script>
 
 <template>
-  <header class="header slide-in-top">
+  <header class="header">
     <nav class="navbar">
       <div class="hamburger" @click="toggleMobileMenu">
         <span class="line"></span>
@@ -221,6 +221,18 @@ const isToggled = ref(false)
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: var(--primary-color);
+    width: 85%;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: flex-end;
   }
 }
 

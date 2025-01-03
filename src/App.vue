@@ -7,6 +7,9 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
+* {
+  outline: 1px solid red; /* Helps see alignment issues */
+}
 html {
   scroll-padding-top: 60px;
   scroll-behavior: smooth;
@@ -20,6 +23,7 @@ html {
   --light-color: #ff0000;
 }
 section {
+  margin: 5rem 0;
 }
 body {
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--background-color) 100%);
