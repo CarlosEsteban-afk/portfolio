@@ -7,9 +7,6 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
-* {
-  outline: 1px solid red; /* Helps see alignment issues */
-}
 html {
   scroll-padding-top: 60px;
   scroll-behavior: smooth;
