@@ -153,7 +153,6 @@ const isToggled = ref(false)
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 60px;
   background-color: var(--primary-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -222,11 +221,39 @@ const isToggled = ref(false)
   .hamburger {
     display: flex;
   }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: fixed; /* Change to fixed for better control */
+    top: 60px;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: calc(100vh - 60px); /* Fullscreen menu */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure above other elements */
+  }
+  .nav-list.open {
+    display: flex;
+  }
 }
 
 @media (max-width: 480px) {
   .nav-list a {
     font-size: 1rem;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: var(--primary-color);
+    width: 85%;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: flex-end;
   }
 }
 </style>
