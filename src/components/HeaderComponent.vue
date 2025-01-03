@@ -222,18 +222,6 @@ const isToggled = ref(false)
   .hamburger {
     display: flex;
   }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    background-color: var(--primary-color);
-    width: 85%;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    align-items: flex-end;
-  }
 }
 
 @media (max-width: 480px) {
