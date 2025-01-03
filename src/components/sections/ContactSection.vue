@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <section class="contact slide-in-right" id="contact">
+  <section class="contact" id="contact">
     <div class="contact-container">
       <div class="contact-card">
         <h1>{{ $t('contact.title') }}</h1>

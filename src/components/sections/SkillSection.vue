@@ -52,7 +52,7 @@ const localizedSkills = computed(() =>
 </script>
 
 <template>
-  <section class="skills slide-in-right" id="skills">
+  <section class="skills" id="skills">
     <h1>{{ t('skills.title') }}</h1>
     <div class="skill-container">
       <SkillCategory

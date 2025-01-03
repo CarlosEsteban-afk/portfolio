@@ -4,13 +4,13 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 import SkillSection from '@/components/sections/SkillSection.vue'
 import ProjectSection from '@/components/sections/ProjectSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
-// import Header from '@/components/HeaderComponent.vue'
+import Header from '@/components/HeaderComponent.vue'
 import FooterSection from '@/components/sections/FooterSection.vue'
 </script>
 
 <template>
   <main class="portfolio">
-    <!-- <Header /> -->
+    <Header />
     <HeroSection />
     <AboutSection />
     <SkillSection />
