@@ -20,7 +20,6 @@ html {
   --light-color: #ff0000;
 }
 section {
-  margin: 5rem 0;
 }
 body {
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--background-color) 100%);
