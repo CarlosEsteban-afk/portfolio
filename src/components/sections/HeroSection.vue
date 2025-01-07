@@ -60,7 +60,7 @@ h1 {
 }
 
 .hero-content h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -76,6 +76,7 @@ h1 {
   padding: 0 0.2rem;
   color: black;
   border-radius: 3px;
+  font-size: 2.5rem;
 }
 
 .hero-buttons {
@@ -104,7 +105,9 @@ h1 {
   h1 {
     text-align: left;
   }
-
+  .highlight {
+    font-size: 4rem;
+  }
   .hero-buttons {
     display: flex;
     gap: 1rem;

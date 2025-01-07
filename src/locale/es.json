@@ -2,13 +2,13 @@
   "language": "ES",
   "hero": {
     "title": "Desarrollador Full Stack y Estudiante de Ingeniería Informática",
-    "subtitle": "Con un profundo interes por el desarrollo de videojuegos y la ciberseguridad.",
-    "primary-button": "Mis proyectos",
+    "subtitle": "Con un profundo interés por el desarrollo de videojuegos y la ciberseguridad.",
+    "primary-button": "Mis Proyectos",
     "secondary-button": "Mi CV"
   },
   "about": {
     "title": "Sobre mí",
-    "content": "Estudiante de Ingeniería Informática en la Universidad de La Frontera, con una gran pasión por aprender y resolver problemas a través de la tecnología. Actualmente me destaco como desarrollador Full Stack y, aunque no poseo experiencia práctica en desarrollo de videojuegos o ciberseguridad, me dedico de forma independiente a aprender sobre estas áreas a través de cursos, proyectos personales y la lectura de documentación técnica.",
+    "content": "Estudiante de Ingeniería Informática en la Universidad de La Frontera, con una gran pasión por aprender y resolver problemas a través de la tecnología. Actualmente me destaco como desarrollador Full Stack y, aunque no poseo experiencia práctica en desarrollo de videojuegos o ciberseguridad, me dedico de forma independiente a aprender sobre estas áreas mediante cursos, proyectos personales y la lectura de documentación técnica.",
     "high-ligt-content": "Soy una persona curiosa y comprometida con el aprendizaje. Disfruto trabajar en equipo, compartir ideas y enfrentar desafíos técnicos que me permitan crecer como profesional."
   },
   "skills": {
@@ -23,19 +23,19 @@
     "description": "Aquí puedes ver algunos de los proyectos en los que he trabajado.",
     "pokedex": {
       "title": "Pokedex",
-      "description": "POC Aplicación móvil que muestra una lista de Pokémon utilizando la API de PokeAPI."
+      "description": "Prueba de concepto (POC) de una aplicación móvil que muestra una lista de Pokémon utilizando la API de PokeAPI."
     },
     "malwareLab": {
-      "title": "Laboratorio de análisis de malware",
-      "description": "Laboratorio de análisis de malware, diseñado para identificar y mitigar amenazas cibernéticas."
+      "title": "Malware Scanner",
+      "description": "Scanner diseñado para identificar y mitigar amenazas cibernéticas utilizando YARA Rules."
     },
     "cityDashboard": {
       "title": "City Scope Dashboard",
-      "description": "Dashboard para la plataforma ReplicaCity Temuco, permite visualizar datos de movilidad urbana en tiempo real."
+      "description": "Dashboard para la plataforma ReplicaCity Temuco, el cual permite visualizar datos de movilidad urbana en tiempo real."
     },
     "bunnyHunt": {
       "title": "Bunny Hunt",
-      "description": "Una prueba de concepto de videojuego creado utilizando PhaserJS."
+      "description": "Prueba de concepto de un videojuego creado utilizando PhaserJS."
     }
   },
   "contact": {
@@ -48,7 +48,6 @@
     "about": "Sobre mí",
     "skills": "Habilidades",
     "projects": "Proyectos",
-    "contact": "Contacto",
-    "language": "Lenguaje"
+    "contact": "Contacto"
   }
 }

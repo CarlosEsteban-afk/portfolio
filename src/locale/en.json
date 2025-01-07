@@ -2,14 +2,14 @@
   "language": "EN",
   "hero": {
     "title": "Full Stack Developer and Computer Engineering Student",
-    "subtitle": "With a deep interest in video game development and cybersecurity.",
-    "primary-button": "My projects",
-    "secondary-button": "My CV"
+    "subtitle": "Passionate about video game development and cybersecurity.",
+    "primary-button": "My Projects",
+    "secondary-button": "My Resume"
   },
   "about": {
-    "title": "About me",
-    "content": "I am Computer Engineering student at the University of La Frontera, with a strong passion for learning and solving problems through technology. I currently excel as a Full Stack Developer. While I don't yet have hands-on experience in video game development or cybersecurity, I am independently exploring these fields through courses, personal projects, and reading technical documentation.",
-    "high-ligt-content": "I am a curious and committed learner. I enjoy working in teams, sharing ideas, and tackling technical challenges that help me grow as a professional."
+    "title": "About Me",
+    "content": "I am a Computer Engineering student at the University of La Frontera, with a strong passion for learning and solving problems through technology. I currently excel as a Full Stack Developer. While I don’t have practical experience in video game development or cybersecurity yet, I am independently exploring these fields through courses, personal projects, and studying technical documentation.",
+    "high-ligt-content": "I am a curious and dedicated learner. I enjoy working in teams, sharing ideas, and tackling technical challenges that help me grow as a professional."
   },
   "skills": {
     "title": "My Skills",
@@ -20,35 +20,34 @@
   },
   "projects": {
     "title": "My Projects",
-    "description": "Here are some of the projects I have worked on.",
+    "description": "Here are some of the projects I’ve worked on.",
     "pokedex": {
       "title": "Pokedex",
-      "description": "A POC mobile application that displays a list of Pokémon using the PokeAPI."
+      "description": "A proof-of-concept (POC) mobile application that displays a list of Pokémon using the PokeAPI."
     },
     "malwareLab": {
-      "title": "Malware Analysis Lab",
-      "description": "A malware analysis lab designed to identify and mitigate cyber threats."
+      "title": "Malware Scanner",
+      "description": "A malware scanner designed to identify and mitigate cyber threats using YARA Rules."
     },
     "cityDashboard": {
       "title": "City Scope Dashboard",
-      "description": "Dashboard for the ReplicaCity Temuco platform, visualizing real-time urban mobility data."
+      "description": "A dashboard for the ReplicaCity Temuco platform, visualizing real-time urban mobility data."
     },
     "bunnyHunt": {
       "title": "Bunny Hunt",
-      "description": "A proof-of-concept video game created using PhaserJS."
+      "description": "A proof-of-concept video game developed using PhaserJS."
     }
   },
   "contact": {
-    "title": "Contact me",
+    "title": "Contact Me",
     "content": "Feel free to reach out for collaborations, job opportunities, or just a friendly chat.",
-    "plataforms": "You can find me on the following platforms:"
+    "plataforms": "You can find me on these platforms:"
   },
   "navbar": {
     "home": "Home",
-    "about": "About",
+    "about": "About Me",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact",
-    "language": "Language"
+    "contact": "Contact"
   }
 }
