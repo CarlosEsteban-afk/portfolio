@@ -5,31 +5,26 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-// Define projects
 const projects = [
   {
     key: 'pokedex',
     tags: ['Figma', 'React-native', 'JavaScript', 'PhaserJS'],
     image: 'pokeapp.png',
-    link: 'https://example2.com',
   },
   {
     key: 'malwareLab',
-    tags: ['Python', 'Cuckoo Sandbox', 'YARA', 'Wireshark'],
+    tags: ['Python', 'YARA'],
     image: 'malware.png',
-    link: 'https://example2.com',
   },
   {
     key: 'cityDashboard',
     tags: ['Vue3.JS', 'JavaScript', 'MapBox', 'Tailwind'],
     image: 'city-dashboard.png',
-    link: 'https://example.com',
   },
   {
     key: 'bunnyHunt',
-    tags: ['Figma', 'JavaScript', 'SpringBoot', 'Vue3.JS', 'PhaserJS'],
+    tags: ['Figma', 'JavaScript', 'Vue3.JS', 'PhaserJS'],
     image: 'bunny-hunt.png',
-    link: 'https://example2.com',
   },
 ]
 
