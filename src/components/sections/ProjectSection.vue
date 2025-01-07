@@ -34,7 +34,6 @@ const localizedProjects = computed(() =>
     description: t(`projects.${project.key}.description`),
     tags: project.tags,
     image: project.image,
-    link: project.link,
   })),
 )
 </script>
@@ -49,7 +48,6 @@ const localizedProjects = computed(() =>
           :description="project.description"
           :tags="project.tags"
           :image="project.image"
-          :link="project.link"
         />
       </div>
     </div>
