@@ -2,7 +2,7 @@
 import ContactIcon from '../ContactIcon.vue'
 
 const icons = [
-  { icon: './icons/email.svg', name: 'Email', link: 'c.pena17@ufromail.cl' },
+  { icon: './icons/email.svg', name: 'Email', link: 'mailto:c.pena17@ufromail.cl' },
   {
     icon: './icons/linkedin.svg',
     name: 'LinkedIn',
