@@ -12,7 +12,11 @@
           <button class="primary-btn">
             <a href="#projects">{{ $t('hero.primary-button') }}</a>
           </button>
-          <button class="secondary-btn">{{ $t('hero.secondary-button') }}</button>
+          <button class="secondary-btn">
+            <a target="_blank" rel="noopener noreferrer" :href="$t('hero.cv-url')">
+              {{ $t('hero.secondary-button') }}
+            </a>
+          </button>
         </div>
       </div>
       <div class="hero-image">
