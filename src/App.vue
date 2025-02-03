@@ -39,6 +39,7 @@ h1 {
 
 .primary-btn,
 .secondary-btn {
+  text-decoration: none;
   padding: 0.8rem 1.2rem;
   border-radius: 4px;
   font-weight: bold;

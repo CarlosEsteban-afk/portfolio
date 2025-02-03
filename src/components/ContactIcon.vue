@@ -8,7 +8,7 @@ const props = defineProps<{
 <template>
   <div class="contact-links">
     <a :href="props.link" class="contact-link">
-      <img :src="props.icon" alt="LinkedIn Icon" class="contact-icon" />
+      <img :src="props.icon" alt="icon" class="contact-icon" />
       {{ props.name }}
     </a>
   </div>

@@ -9,14 +9,10 @@
           <p>{{ $t('hero.subtitle') }}</p>
         </h1>
         <div class="hero-buttons">
-          <button class="primary-btn">
-            <a href="#projects">{{ $t('hero.primary-button') }}</a>
-          </button>
-          <button class="secondary-btn">
-            <a target="_blank" rel="noopener noreferrer" :href="$t('hero.cv-url')">
+            <a  class="primary-btn" href="#projects">{{ $t('hero.primary-button') }}</a>
+            <a class="secondary-btn" target="_blank" rel="noopener noreferrer" :href="$t('hero.cv-url')">
               {{ $t('hero.secondary-button') }}
             </a>
-          </button>
         </div>
       </div>
       <div class="hero-image">
