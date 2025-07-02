@@ -5,7 +5,7 @@
     "subtitle": "Con un profundo interés por el desarrollo de videojuegos y la ciberseguridad.",
     "primary-button": "Mis Proyectos",
     "secondary-button": "Mi CV",
-    "cv-url": "https://drive.google.com/file/d/1O_KSGXlGxJJEnDLejSZ5NnF9bGQoP7uM/view"
+    "cv-url": "https://drive.google.com/file/d/1TjsRcbCvtuUtiwMgWnCzTrPHLZozgW6o/view?usp=sharing"
   },
   "about": {
     "title": "Sobre mí",
@@ -38,6 +38,22 @@
       "title": "Bunny Hunt",
       "description": "Prueba de concepto de un videojuego creado utilizando PhaserJS."
     }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "description": "Aquí puedes ver algunas de las certificaciones que he obtenido.",
+    "certificationsList": [
+      {
+        "name": "Curso de Desarrollo Web Full Stack",
+        "issuer": "Platzi",
+        "url": "https://platzi.com/p/certificados/curso-desarrollo-web-full-stack/"
+      },
+      {
+        "name": "Curso de Ciberseguridad",
+        "issuer": "Coursera",
+        "url": "https://www.coursera.org/learn/cybersecurity"
+      }
+    ]
   },
   "contact": {
     "title": "Contáctame",
